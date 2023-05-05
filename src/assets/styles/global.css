@@ -1,0 +1,167 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    font-family: "Monaco";
+  }
+
+  h1 {
+    @apply text-center text-4xl md:text-5xl font-bold tracking-tighter mb-8 md:mb-8;
+  }
+
+  h2 {
+    @apply text-left text-3xl md:text-4xl font-bold tracking-tighter mb-4 md:mb-4;
+  }
+
+  a {
+    @apply hover:text-primary-500 transition-all ease-in-out duration-200;
+  }
+
+  main {
+    @apply bg-gray-100 dark:bg-black 2xl:min-h-[calc(100vh-226px)] min-h-[calc(100vh-182px)];
+  }
+
+  section {
+    @apply px-6 sm:px-6 py-6 mx-auto max-w-4xl;
+  }
+
+  .content strong {
+    @apply text-black dark:text-primary-500;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md shadow-md border-gray-400 border bg-transparent font-medium text-center text-gray-700 leading-snug transition py-2 px-4 md:px-8 ease-in duration-200 focus:ring-primary-500 focus:ring-offset-primary-200 focus:ring-2 focus:ring-offset-2 hover:bg-gray-100 hover:border-gray-600 dark:text-slate-300 dark:border-slate-500 dark:hover:bg-slate-800 dark:hover:border-slate-800;
+  }
+
+  .btn-small {
+    @apply py-1 px-2 text-sm;
+  }
+
+  .btn-ghost {
+    @apply border-none shadow-none text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
+  }
+
+  .btn-primary {
+    @apply font-semibold bg-primary-700 text-white border-primary-700 hover:bg-primary-800 hover:border-primary-800 hover:text-white dark:text-white dark:bg-primary-700 dark:border-primary-700 dark:hover:border-primary-900 dark:hover:bg-primary-900;
+  }
+
+  .btn-delete {
+    @apply font-semibold bg-danger-600 text-white border-danger-600 hover:bg-danger-800 hover:border-danger-800 hover:text-white dark:text-white dark:bg-danger-700 dark:border-danger-700 dark:hover:border-danger-900 dark:hover:bg-danger-900;
+  }
+
+  .row {
+    @apply grid grid-cols-1 gap-0 md:gap-4 mb-4 md:mb-0;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-700 shadow-md rounded p-4 mb-4;
+  }
+
+  .actions {
+    @apply flex space-x-4 justify-end;
+  }
+
+  .notification {
+    @apply p-4;
+  }
+
+  .is-danger {
+    @apply bg-danger-700 text-white font-semibold;
+  }
+
+  [data-aw-toggle-menu] path {
+    @apply transition;
+  }
+
+  [data-aw-toggle-menu].expanded g > path:first-child {
+    @apply -rotate-45 translate-y-[15px] translate-x-[-3px];
+  }
+
+  [data-aw-toggle-menu].expanded g > path:last-child {
+    @apply rotate-45 translate-y-[-8px] translate-x-[14px];
+  }
+
+  form {
+    @apply bg-gray-100 shadow-md rounded p-4 dark:bg-gray-700;
+  }
+
+  form.login {
+    @apply max-w-md m-auto bg-white dark:bg-gray-700;
+  }
+
+  form label {
+    @apply dark:text-white;
+  }
+
+  .field {
+    @apply mb-4;
+  }
+
+  label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+
+  input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-primary-700;
+  }
+
+  input[type="range"] {
+    @apply h-2 bg-gray-200 rounded-lg cursor-pointer dark:bg-gray-700 border-0 p-0;
+    background-image: linear-gradient(#086108, #00ff00);
+    background-repeat: no-repeat;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    @apply bg-primary-700 appearance-none cursor-pointer w-4 h-4 rounded-lg;
+  }
+
+  textarea {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-primary-700;
+  }
+
+  .term {
+    @apply bg-white py-2 px-3 border-black border-solid border dark:bg-gray-900 dark:border-primary-700 flex min-h-[calc(100%-1rem)];
+  }
+
+  .term pre {
+    @apply text-black dark:text-primary-500 whitespace-normal;
+    font-size: 0.8rem;
+    display: inline;
+  }
+
+  .term pre p {
+    @apply py-1;
+  }
+
+  .term pre strong {
+    @apply text-black dark:text-white;
+  }
+
+  .term .curs {
+    @apply bg-black dark:bg-primary-500 inline-block;
+    animation: blink 1s infinite;
+    width: 0.5rem;
+    height: 1rem;
+    margin-bottom: -0.2rem;
+  }
+
+  @keyframes blink {
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
