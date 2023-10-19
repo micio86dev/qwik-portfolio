@@ -1,4 +1,11 @@
 {
+  "source": "**/*.@(eot|otf|ttf|ttc|woff|font|css|jpg|jpeg|gif|png)",
+  "headers": [
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    }
+  ],
   "database": {
     "rules": "database.rules.json"
   },
