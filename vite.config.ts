@@ -23,7 +23,7 @@ export default defineConfig(() => {
     ],
     preview: {
       headers: {
-        "Cache-Control": "public, max-age=600",
+        "Cache-Control": "public, max-age=3600",
       },
     },
     resolve: {

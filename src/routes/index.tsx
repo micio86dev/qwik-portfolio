@@ -15,8 +15,6 @@ import Spinner from "~/components/atoms/Spinner";
 import AddForm from "~/components/skills/AddForm";
 import Term from "~/components/widgets/Term/Term";
 import { UserInformationContext } from "~/root";
-import ImgAvatarMini from "~/images/avatar-mini.webp?jsx";
-import ImgAvatar from "~/images/avatar.webp?jsx";
 
 interface SkillsProps {
   skills?: Skill[];
@@ -55,16 +53,26 @@ export default component$(() => {
 
       <div class="row md:grid-cols-4">
         <div class="mb-4 md:mb-0">
-          <ImgAvatar
-            class="w-full hidden md:block m-auto"
-            loading="lazy"
-            alt="Avatar"
-          />
-          <ImgAvatarMini
-            class="w-full block md:hidden"
-            loading="lazy"
-            alt="Avatar"
-          />
+          <picture>
+            <source srcSet="/images/avatar.webp" type="image/webp" />
+            <img
+              class="w-full hidden md:block m-auto"
+              width="200"
+              height="493"
+              alt="Avatar"
+              srcSet="/images/avatar.webp"
+            />
+          </picture>
+          <picture>
+            <source srcSet="/images/avatar-mini.webp" type="image/webp" />
+            <img
+              class="w-full block md:hidden"
+              width="581"
+              height="581"
+              alt="Avatar"
+              srcSet="/images/avatar-mini.webp"
+            />
+          </picture>
         </div>
         <div class="col-span-3">
           <Term delay={1000} speed={10} name="story" />
