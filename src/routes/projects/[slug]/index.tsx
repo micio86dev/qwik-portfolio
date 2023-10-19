@@ -22,7 +22,7 @@ export const useGetProjectBySlug = routeLoader$(
     }
 
     return project as Project;
-  }
+  },
 );
 
 export default component$(() => {

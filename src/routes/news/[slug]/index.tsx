@@ -22,7 +22,7 @@ export const useGetNewBySlug = routeLoader$(
     }
 
     return news as New;
-  }
+  },
 );
 
 export default component$(() => {

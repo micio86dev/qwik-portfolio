@@ -24,7 +24,7 @@ export default component$(() => {
     {
       projects: undefined,
     },
-    { deep: true }
+    { deep: true },
   );
 
   const currentUser = useContext(UserInformationContext);

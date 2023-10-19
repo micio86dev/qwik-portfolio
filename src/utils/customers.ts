@@ -32,7 +32,7 @@ export const fetchCustomers = async (): Promise<Customer[]> => {
 };
 
 export const findCustomerBySlug = async (
-  slug: string
+  slug: string,
 ): Promise<Customer | null> => {
   if (!slug) return null;
 

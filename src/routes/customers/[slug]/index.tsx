@@ -22,7 +22,7 @@ export const useGetCustomerBySlug = routeLoader$(
     }
 
     return customer as Customer;
-  }
+  },
 );
 
 export default component$(() => {

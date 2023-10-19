@@ -15,6 +15,8 @@ import Spinner from "~/components/atoms/Spinner";
 import AddForm from "~/components/skills/AddForm";
 import Term from "~/components/widgets/Term/Term";
 import { UserInformationContext } from "~/root";
+import ImgAvatarMini from "~/images/avatar-mini.webp?jsx"; // width="581" height="581"
+import ImgAvatar from "~/images/avatar.webp?jsx"; // width="200" height="493"
 
 interface SkillsProps {
   skills?: Skill[];
@@ -25,7 +27,7 @@ export default component$(() => {
     {
       skills: undefined,
     },
-    { deep: true }
+    { deep: true },
   );
   const currentUser = useContext(UserInformationContext);
 
@@ -53,20 +55,8 @@ export default component$(() => {
 
       <div class="row md:grid-cols-4">
         <div class="mb-4 md:mb-0">
-          <img
-            class="w-full hidden md:block m-auto"
-            alt="Avatar"
-            src="/images/avatar.webp"
-            width="200"
-            height="493"
-          />
-          <img
-            class="w-full block md:hidden"
-            alt="Avatar"
-            src="/images/avatar-mini.webp"
-            width="581"
-            height="581"
-          />
+          <ImgAvatar class="w-full hidden md:block m-auto" alt="Avatar" />
+          <ImgAvatarMini class="w-full block md:hidden" alt="Avatar" />
         </div>
         <div class="col-span-3">
           <Term delay={1000} speed={10} name="story" />

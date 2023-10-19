@@ -60,7 +60,8 @@ export default component$(() => {
               value={store.form.percentage}
               required={true}
               on-input={$(
-                (ev: any) => (store.form.percentage = parseInt(ev.target.value))
+                (ev: any) =>
+                  (store.form.percentage = parseInt(ev.target.value)),
               )}
             />
           </div>

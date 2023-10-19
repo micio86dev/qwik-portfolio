@@ -24,7 +24,7 @@ export default component$(() => {
     {
       customers: undefined,
     },
-    { deep: true }
+    { deep: true },
   );
 
   const currentUser = useContext(UserInformationContext);

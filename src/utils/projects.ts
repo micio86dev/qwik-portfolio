@@ -32,7 +32,7 @@ export const fetchProjects = async (): Promise<Project[]> => {
 };
 
 export const findProjectBySlug = async (
-  slug: string
+  slug: string,
 ): Promise<Project | null> => {
   if (!slug) return null;
 

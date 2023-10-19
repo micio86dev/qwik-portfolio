@@ -86,7 +86,7 @@ export default component$(() => {
               value={store.form.description}
               required={true}
               on-input={$(
-                (ev: any) => (store.form.description = ev.target.value)
+                (ev: any) => (store.form.description = ev.target.value),
               )}
             />
           </div>
