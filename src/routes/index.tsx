@@ -54,23 +54,23 @@ export default component$(() => {
       <div class="row md:grid-cols-4">
         <div class="mb-4 md:mb-0">
           <picture>
-            <source srcSet="/images/avatar.webp" type="image/webp" />
+            <source srcset="/images/avatar.webp" type="image/webp" />
             <img
               class="w-full hidden md:block m-auto"
               width="200"
               height="493"
               alt="Avatar"
-              srcSet="/images/avatar.webp"
+              srcset="/images/avatar.webp"
             />
           </picture>
           <picture>
-            <source srcSet="/images/avatar-mini.webp" type="image/webp" />
+            <source srcset="/images/avatar-mini.webp" type="image/webp" />
             <img
               class="w-full block md:hidden"
               width="581"
               height="581"
               alt="Avatar"
-              srcSet="/images/avatar-mini.webp"
+              srcset="/images/avatar-mini.webp"
             />
           </picture>
         </div>
