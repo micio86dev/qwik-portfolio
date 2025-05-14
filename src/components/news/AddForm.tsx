@@ -36,12 +36,7 @@ export default component$(() => {
   return (
     <div class="py-4 my-4">
       {opened.value ? (
-        <form
-          method="post"
-          autoComplete="off"
-          preventdefault:submit
-          onSubmit$={create}
-        >
+        <form method="post" preventdefault:submit onSubmit$={create}>
           <div class="row grid-cols-2">
             <InputText
               name="title"

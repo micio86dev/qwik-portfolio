@@ -30,12 +30,7 @@ export default component$((props: SkillsProps) => {
   });
 
   return (
-    <form
-      method="post"
-      autoComplete="off"
-      preventdefault:submit
-      onSubmit$={mod}
-    >
+    <form method="post" preventdefault:submit onSubmit$={mod}>
       <div class="row grid-cols-2">
         <InputText
           name="name"

@@ -35,7 +35,6 @@ export default component$(() => {
         <form
           class="login"
           method="post"
-          autoComplete="off"
           preventdefault:submit
           onSubmit$={login}
         >

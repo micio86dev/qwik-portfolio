@@ -39,7 +39,6 @@ export default component$(() => {
         <form
           class="contact"
           method="post"
-          autoComplete="off"
           preventdefault:submit
           onSubmit$={send}
         >

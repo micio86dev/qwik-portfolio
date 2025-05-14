@@ -29,12 +29,7 @@ export default component$((props: TextsProps) => {
   });
 
   return (
-    <form
-      method="post"
-      autoComplete="off"
-      preventdefault:submit
-      onSubmit$={mod}
-    >
+    <form method="post" preventdefault:submit onSubmit$={mod}>
       <div class="row grid-cols-1">
         <InputTextarea
           class="min-h-[30vh]"
