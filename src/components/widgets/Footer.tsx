@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
-import { IconTwitter } from "~/components/icons/IconTwitter";
+import { IconYouTube } from "~/components/icons/IconYouTube";
+import { IconTikTok } from "~/components/icons/IconTikTok";
 import { IconInstagram } from "~/components/icons/IconInstagram";
 import { IconFacebook } from "~/components/icons/IconFacebook";
 import { IconGithub } from "~/components/icons/IconGithub";
@@ -7,19 +8,24 @@ import { IconGithub } from "~/components/icons/IconGithub";
 export default component$(() => {
   const social = [
     {
-      label: "Twitter",
-      icon: IconTwitter,
-      href: "https://twitter.com/micio862",
+      label: "YouTube",
+      icon: IconYouTube,
+      href: "https://www.youtube.com/@miciodev",
+    },
+    {
+      label: "TikTok",
+      icon: IconTikTok,
+      href: "https://www.tiktok.com/@miciodev",
     },
     {
       label: "Instagram",
       icon: IconInstagram,
-      href: "https://www.instagram.com/alessandro.micelli/",
+      href: "https://www.instagram.com/miciodev/",
     },
     {
       label: "Facebook",
       icon: IconFacebook,
-      href: "https://www.facebook.com/micio86dev",
+      href: "https://www.facebook.com/profile.php?id=61576394360974",
     },
     {
       label: "Github",
